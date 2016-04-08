@@ -18,7 +18,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 This package installs the PostgreSQL ODBC library
 
 %prep
-%setup -q
+%setup -q -n psqlodbc-%{version}
 
 %build
 %configure --enable-pthreads --with-libpq=/usr/pgsql-9.5 --with-unixodbc=/usr/bin/odbc_config
