@@ -6,7 +6,7 @@ Group: System Environment/Libraries
 URL: https://odbc.postgresql.org/
 License: LGPLv2+
 
-Source: https://ftp.postgresql.org/pub/odbc/versions/src/%{name}-%{version}.tar.gz
+Source: https://ftp.postgresql.org/pub/odbc/versions/src/psqlodbc-%{version}.tar.gz
 
 Conflicts: postgresql-odbc postgresql95-odbc psqlodbc
 BuildRequires: automake autoconf libtool postgresql95-devel
