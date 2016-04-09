@@ -6,7 +6,7 @@ Group: System Environment/Libraries
 URL: https://odbc.postgresql.org/
 License: LGPLv2+
 
-Source: https://ftp.postgresql.org/pub/odbc/versions/src/%{name}-%{version}.tar.gz
+Source: https://ftp.postgresql.org/pub/odbc/versions/src/psqlodbc-%{version}.tar.gz
 
 Conflicts: postgresql-odbc postgresql95-odbc psqlodbc
 BuildRequires: automake autoconf libtool postgresql95-devel
@@ -18,7 +18,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 This package installs the PostgreSQL ODBC library
 
 %prep
-%setup -q
+%setup -q -n psqlodbc-%{version}
 
 %build
 %configure --enable-pthreads --with-libpq=/usr/pgsql-9.5 --with-unixodbc=/usr/bin/odbc_config
