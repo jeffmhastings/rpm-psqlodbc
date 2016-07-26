@@ -1,6 +1,6 @@
 Summary: A complete ODBC driver manager for Linux
 Name: psqlodbc95
-Version: %{?version}%{!?version:09.05.0100}
+Version: %{?version}%{!?version:09.05.0300}
 Release: 1%{?dist}
 Group: System Environment/Libraries
 URL: https://odbc.postgresql.org/
@@ -10,8 +10,8 @@ Source: https://ftp.postgresql.org/pub/odbc/versions/src/psqlodbc-%{version}.tar
 
 Conflicts: postgresql-odbc postgresql95-odbc psqlodbc
 BuildRequires: automake autoconf libtool postgresql95-devel
-BuildRequires: unixODBC-devel >= 2.3.4-1
-Requires: unixODBC >= 2.3.4-1
+BuildRequires: unixODBC-devel
+Requires: unixODBC
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
