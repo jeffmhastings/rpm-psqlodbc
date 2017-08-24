@@ -2,7 +2,7 @@ image_tag := psqlodbc-rpmbuild-centos6
 
 .PHONY: rpms
 rpms: image
-	docker run --rm -it -v $(shell pwd)/rpms:/rpmbuild/RPMS/x86_64/ ${image_tag}
+	docker run --rm -v $(shell pwd)/rpms:/rpmbuild/RPMS/x86_64/ ${image_tag}
 
 .PHONY: image
 image:
